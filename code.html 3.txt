@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juan Miguel Carlos - Portfolio</title>
+    <style>
+        /* Embedded CSS for simplicity */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            background-color: #007bff;
+            padding: 1rem;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 1rem;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav ul li a:hover {
+            color: #ddd;
+        }
+        main {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 1rem;
+        }
+        .section {
+            background-color: #fff;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            margin-bottom: 2rem;
+        }
+        .hero h1 {
+            color: #007bff;
+            text-align: center;
+        }
+        .hero p {
+            text-align: center;
+        }
+        .hero img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+            margin: 1rem auto;
+        }
+        .about, .contact {
+            text-align: center;
+        }
+        .profile-image {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin: 1rem 0;
+        }
+        .skills ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .skills li {
+            background-color: #007bff;
+            color: white;
+            padding: 0.5rem 1rem;
+            margin: 0.5rem;
+            border-radius: 4px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+        label {
+            margin-top: 1rem;
+            font-weight: bold;
+        }
+        input, textarea {
+            padding: 0.5rem;
+            margin-top: 0.5rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            margin-top: 1rem;
+            padding: 0.75rem;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #007bff;
+            color: white;
+            margin-top: 2rem;
+        }
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+            nav ul li {
+                margin: 0.5rem 0;
+            }
+            .skills ul {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="home" class="section hero">
+            <h1>Welcome to Juan Miguel Carlos' Portfolio</h1>
+            <p>I'm an 18-year-old BSIT student passionate about web development and technology. Explore my work and get in touch!</p>
+            <img src="https://via.placeholder.com/800x400?text=Hero+Image" alt="Hero image of a laptop and code">
+        </section>
+        
+        <section id="about" class="section about">
+            <h2>About Me</h2>
+            <!-- REPLACE THIS IMAGE: Change src to your image file (e.g., src="my-profile.jpg") or a URL. Update alt text too. -->
+            <img src="https://via.placeholder.com/150?text=Your+Photo+Here" alt="Photo of Juan Miguel Carlos" class="profile-image">
+            <p>Hi, I'm Juan Miguel Carlos, an 18-year-old student pursuing a Bachelor of Science in Information Technology (BSIT). I enjoy coding, design, and learning new technologies to build innovative solutions.</p>
+            <div class="skills">
+                <h3>Skills</h3>
+                <ul>
+                    <li>HTML & CSS</li>
+                    <li>JavaScript</li>
+                    <li>Responsive Design</li>
+                    <li>UI/UX Basics</li>
+                </ul>
+            </div>
+        </section>
+        
+        <section id="contact" class="section contact">
+            <h2>Contact Me</h2>
+            <p>Feel free to reach out for collaborations or questions!</p>
+            <form action="#" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                
+                <button type="submit">Send</button>
+            </form>
+            <p>Email: juanmig1008@gmail.com | Phone: 09624220909</p>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 Juan Miguel Carlos - BSIT Portfolio. All rights reserved.</p>
+    </footer>
+</body>
+</html>
